@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONA groups</title>
+    <style>
+header div{
+    display: flex;
+    justify-content:space-between;
+    text-align:center;
+    background-color: snow;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+header nav{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    margin-right: 10px;
+}
+fieldset{
+    width: 70px;
+    text-align: center;
+    position: relative;
+    left: 550px;
+    margin-top: 150px;
+    background-color: rgba(95, 42, 130, 0.677);
+}
+main{
+    text-align: center;
+}
+.sub{
+    background-color:rgb(25, 43, 6);
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
+img{
+    width: 150px;
+}
+    </style>
+</head>
+<body>
+   <header>
+    <div>
+        <img src="./logo.png" alt="">   
+    </div>
+    <nav>
+        <a href="">HOME</a>
+        <a href="">PRODUCTS</a>
+        <a href="">CAREERS</a>
+        <a href="">CONTACT US</a>
+        <input type="search" name="Search" id placeholder=" SEARCH">
+        
+       </nav>
+   </header>
+  
+<main>
+    <fieldset>
+        <h1>FILL the details</h1>
+        <table>
+            <form action method ="post"></form>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="numb">Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="numb" placeholder="Enter Name">
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="nu">Email:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="nu" placeholder="Enter Email">
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="nm">Message:</label>
+                    </td>
+                    <td>
+                        <input type="textarea" id="nm" placeholder="Enter Message">
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="sub" type="submit" name="submit">
+                    </td>
+                </tr>
+                
+            </tbody>
+
+        </table>
+    </fieldset>
+</main>
+</body>
+</html>
