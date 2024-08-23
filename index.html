@@ -1,114 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head itemscope="" itemtype="https://schema.org/WebSite">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>KONA</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="shambala.css">
 </head>
-<style>
-  body{
-   background-color: rgb(194, 213, 244);
-  }
-  .s1 {
-    background-color:rgb(56, 54, 54);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    margin-left: 500px;
-    height: 30vh;
-    align-content: center;
-    margin-top: 200px;
-    color: #fff;
-  }
-  #email ,#password {
-   width: calc(100% - 20px);
-    padding: 10px;
-   margin: 10px ;
-   border: 1px solid #ccc;
-   border-top: none;
-   border-left: none;
-   border-right: none;
-   border-radius: 4px;
-   box-sizing: border-box;
-    }
-  #Login{
-    border: none;
-    background-color: lightskyblue;
-    border-radius: 4px;
-    color: #fff;
-    padding: 10px;
-    width: 30%;
-    cursor: pointer;
-    position: relative;
-    left: 130px;
-    top: 30px;
-  }
-  #Login:hover{
-    background-color: black;
-  }
-  .div{
-    background-color:lightskyblue;
-    border-radius:8px;
-    box-shadow: 0 0 10px rgb(11, 11, 11);
-  }
-  nav {
-    list-style: none;
-    position: absolute;
-    top: 46px;
-    left: 700px;
-    padding: 10px;
-  }
-  nav a{
-    padding: 40px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
 
-  }
-  nav a:hover{
-    color: cadetblue;
-  }
-
-</style>
-<body>
-  <header>
-    <div class="div">
-      <img src="https://3ro8b0zdvxfbk7jy.public.blob.vercel-storage.com/digitallync-kAEA3lzPbRRxSQqzjNHBfAc8mttg51.png" alt="">
-      <nav>
-        <div>
-          <a href="">HOME</a>
-          <a href="">HOME</a>
-          <a href="">HOME</a>
-          <a href="">HOME</a>
-  
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand"  href=""><img id="img1" src="https://konadigital.in/images/logo.png" alt="" srcset=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Products
+                    <select name="dd1" id="op1">
+                      <option value=""></option>
+                      <option value="">LMS</option>
+                      <option value="">CRM</option>
+                      <option value="">HRMS</option>
+                    </select>
+                  </a>
+                  
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Solutions
+                    <select name="dd1" id="op2">
+                      <option value=""></option>
+                      <option value="">Educational intitutions</option>
+                      <option value="">Finance</option>
+                    </select>
+                  </a>
+                  
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Services
+                    <select name="dd1" id="op3">
+                      <option value=""></option>
+                      <option value="">Sales</option>
+                      <option value="">Servie</option>
+                      <option value="">Markting</option>
+                    </select>
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resoures</a>
+                </li>
+                <li>
+                  <button id="butn"><span>StartNow</span></button>
+                </li>
+            </ul>
+            
         </div>
-      </nav>
-    </div>
+    </nav>
+</header>
+<div class="herobanner">
+  <div class="container">
+    <div>
+      <h6>Meet&nbsp;Us</h6>
+      <h1>"Revolutionizing Business"
+        <br>
+        "With Custom AI Apps"
+      </h1>
+      <p>"Elevate your business operations with our state-of-the-art AI-powered solutions."</p>
+      <div class="btns">
+        <a href="#" class="btn1" data-toggle="modal" data-target="#get_trained">   <span> Know More</span></a>
+        <a href="#" class="btn" data-toggle="modal" data-target="#get_trained"> <span>Ask For Free Demo</span> </a>
+      </div>
+      <img src="https://konadigital.in/images/pathone.png" alt class="pathone">
+      <img src="https://konadigital.in/images/pathtwo.png" alt class="pathtwo">
+      <img src="https://konadigital.in/images/pathtwo.png" alt class="paththree">
+      <img src="https://konadigital.in/images/pathone.png" alt class="pathfour">
+      <div class="herobg" ></div>
     
-  </header>
-  <div class="s1">
-    <div class="E1">
-      <label for="">EMAIL</label>
-      <input type="email" placeholder="Enter EMAIL" id="email">
     </div>
-   <div class="E2">
-    <label for="">PASSWORD</label>
-    <input type="password" placeholder="Enter PASSWORD" id="password">   
-   </div>
-   <button id="Login" onclick="validateCredentials()" >LOGIN</button>
+    <br>
+    <div class="Services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="pcard left">
+              <div class="pimg"><img src="https://konadigital.in/images/img1.jpg" alt=""></div> 
+             <div class="pcnt"></div>
+             <h4>CRM   (Customer Relationship Management)</h4>
+              <p>Leverage our AI-powered CRM to gain actionable insights, automate mundane tasks, and build stronger customer relationships.</p>
+            <p><a href="products.html">Know more <span><img src="https://konadigital.in/images/arrow.png" alt=""></span></a></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="pcard center">
+              <div class="pimg"><img src="https://konadigital.in/images/img2.jpg" alt=""></div>
+              <div class="pcnt">
+              <h4>LMS  (Learning Management System)</h4>
+              <p>Transform the learning experience with our intelligent LMS, designed to cater to the evolving needs of the education sector.</p>
+            <p><a href="products.html">Know more <span><img src="https://konadigital.in/images/arrow.png" alt=""></span></a></p> </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="pcard right">
+              <div class="pimg"><img src="https://konadigital.in/images/img3.jpg" alt=""></div>
+              <div class="pcnt">
+              <h4>HRMS (Human Resource Management System)</h4>
+              <p>Optimise your HR processes with our AI-driven HRMS, ensuring efficient management of recruiting, training, payroll, and more.</p>
+            <p><a href="products.html">Know more <span><img src="https://konadigital.in/images/arrow.png" alt=""></span></a></p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="features">
+      <div class="container">
+        <h5>
+          <span> Industry Solutions</span></h5>
+          <h4 > <span> Kona Digital </span> Revolutionizing Industries with a Feature-Rich, <br> AI-Powered Ecosystem</h4>
+  <div class="fbox">
+<div class="frowbox">
+  <div class="fone" >
+    <img src="https://konadigital.in/images/f1.png" alt="">
+    <h3>Education</h3>
+    <p>Empower your institution with cutting-edge education technology solutions designed to enhance the learning and administrative experience.</p>
   </div>
- <script>
-  const user ={
-    name: 'karthik',
-    email:'karthik9@gmail.com',
-    password: 'karthik123',
-    username: 'karthik22'
-  }
-  function validateCredentials() {
-    const enteredEmail=document.getElementById('email').value;
-    const enteredPassword=document.getElementById('password').value;
+  <div class="fone" >
+    <img src="https://konadigital.in/images/f2.png" alt="">
+    <h3>Industries</h3>
+    <p>From manufacturing to retail, our AI solutions are crafted to address the specific challenges and opportunities within each industry.</p>
+  </div>
+</div>
 
-  }
- </script>
+<div class="frowbox">
+  <div class="fone" >
+    <img src="https://konadigital.in/images/f3.png" alt="">
+    <h3>Real Estate</h3>
+    <p>Boost your real estate business with intelligent AI solutions that offer deeper insights, better customer engagement, and streamlined operations.</p>
+  </div>
+  <div class="fone" >
+    <img src="https://konadigital.in/images/f4.png" alt="">
+    <h3>IT</h3>
+    <p>Revolutionize your IT services with AI applications that improve system efficiencies, predict issues before they arise, and enhance overall performance.</p>
+  </div>
+</div>
+
+
+  </div>
+
+  </div>
+<img src="https://konadigital.in/images/blue1.png" alt="" class="blur1" >
+<img src="https://konadigital.in/images/blur2.png" alt="" class="blur2" >
+<img src="https://konadigital.in/images/ropeline.png" alt="" class="ropeline"  >
+</div>
+
+
+<div class="trusted">
+  <div class="">
+ 
+    
+     <h3 >Trusted by <span> millions</span></h3>
+    
+    <section id="owl-1">
+      <div class="owl-carousel owl-theme">
+        
+          <div class="hoverable" >
+            <div class="cardbox">
+              <p>As a freelance writer, I was looking for a tool that could help me
+                generate ideas and write faster. This AI Text website has done that
+                and more.</p>
+
+                <div class="userinfo">
+                  <img src="https://konadigital.in/images/user1.png" alt=""> <span>
+
+                    <strong>Ramesh</strong>  Freelancer
+                  </span>
+                </div>
+            </div>
+
+          </div> 
+
+          <div class="hoverable" >
+            <div class="cardbox">
+              <p>As a freelance writer, I was looking for a tool that could help me
+                generate ideas and write faster. This AI Text website has done that
+                and more.</p>
+
+                <div class="userinfo">
+                  <img src="https://konadigital.in/images/user2.png" alt=""> <span>
+
+                    <strong>Geetha</strong>  Copywriter
+                  </span>
+                </div>
+            </div>
+
+          </div> 
+
+          <div class="hoverable" >
+            <div class="cardbox">
+              <p>As a freelance writer, I was looking for a tool that could help me
+                generate ideas and write faster. This AI Text website has done that
+                and more.</p>
+
+                <div class="userinfo">
+                  <img src="https://konadigital.in/images/user3.png" alt=""> <span>
+
+                    <strong>Amardeep</strong>  Freelancer
+                  </span>
+                </div>
+            </div>
+
+          </div> 
+        
+      </div>
+    </section>
+    
+     
+    
+    
+  </div>
+  <img src="https://konadigital.in/images/mapimg.png" alt="" class="mapimg" >
+</div>
+
+
+
+<div class="locations">
+
+
+  <div class="container">
+
+
+    <div class="row">
+      <div class="col-md-6"> <h5 >Bengaluru</h5> <p >3rd Floor, Site No 1&2 Saroj Square, Whitefield <br> Main Road, Munnekollal Villag Post, <br> Marathahalli, Bengaluru, Karnataka 560037</p></div>
+      <div class="col-md-6"> <img src="https://konadigital.in/images/bangalore.png" alt="" ></div>
+    </div>
+
+
+    <div class="row padt100"><div class="col-md-6"> <img src="https://konadigital.in/images/hyderabad.png" alt="" ></div>
+      <div class="col-md-6"> <h5 >Hyderabad</h5> <p >2nd Floor, Hitech City Rd, Above Domino's, opp. <br> Cyber Towers, Jai hind Enclave,  <br>Hyderabad, Telangana, 06304982304</p></div>
+      
+    </div>
+
+
+  </div>
+
+  <img src="https://konadigital.in/images/blur3.png" alt="" class="blur3" >
+  <img src="https://konadigital.in/images/rope2.png" alt="" class="rope2" >
+  <img src="https://konadigital.in/images/blur4.png" alt="" class="blur4" >
+
+</div>
+
+
+<div class="faq">
+  <div class="container">
+ <h3 >Q&A</h3>
+  
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <!-- Accordion -->
+        <div id="accordionExample" class="accordion">
+  
+          <!-- Accordion item 1 -->
+          <div class="qarow" >
+            <div id="headingOne" class="">
+              <h2 class="mb-0">
+                <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne"
+                  class="collapsible-link">What services does Kona Digital provide?</button>
+              </h2>
+            </div>
+            <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse">
+              <div class="">
+                <p class=""> Kona Digital specializes in building custom AI applications, including AI-powered CRM, LMS, and HRMS solutions. We also offer comprehensive marketing, sales, and service solutions tailored to the unique needs of various industries, including education, real estate, IT, and more.</p>
+              </div>
+            </div>
+          </div> 
+          <div class="qarow" >
+            <div id="headingOne" class="">
+              <h2 class="mb-0">
+                <button type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true"
+                  aria-controls="collapseOne1"
+                  class="collapsible-link">How can AI solutions benefit my business?
+                  </button>
+              </h2>
+            </div>
+            <div id="collapseOne1" aria-labelledby="headingOne1" data-parent="#accordionExample" class="collapse">
+              <div class="">
+                <p class="">  AI solutions can automate repetitive tasks, provide valuable insights through predictive analytics, enhance personalized interactions, improve operational efficiency, and ultimately drive better business outcomes. Whether it's managing customer relationships, optimizing HR processes, or enhancing learning experiences, our AI solutions are designed to meet your specific needs.</p>
+              </div>
+            </div>
+          </div> 
+   
+          <div class="qarow" >
+            <div id="headingOne" class="">
+              <h2 class="mb-0">
+                <button type="button" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true"
+                  aria-controls="collapseOne2"
+                  class="collapsible-link">Is it easy to integrate Kona Digital's AI solutions with my existing systems?</button>
+              </h2>
+            </div>
+            <div id="collapseOne2" aria-labelledby="headingOne2" data-parent="#accordionExample" class="collapse">
+              <div class="">
+                <p class=""> Yes, our AI solutions are designed to seamlessly integrate with various existing tools and platforms, ensuring a smooth transition and consistency across your workflows. This minimizes disruption and maximizes efficiency.</p>
+              </div>
+            </div>
+          </div> 
+          <div class="qarow" >
+            <div id="headingOne" class="">
+              <h2 class="mb-0">
+                <button type="button" data-toggle="collapse" data-target="#collapseOne3" aria-expanded="true"
+                  aria-controls="collapseOne3"
+                  class="collapsible-link">Can Kona Digital's solutions be customized for my business?</button>
+              </h2>
+            </div>
+            <div id="collapseOne3" aria-labelledby="headingOne3" data-parent="#accordionExample" class="collapse">
+              <div class="">
+                <p class="">Absolutely. We understand that every business is unique. Our AI solutions are highly customizable, allowing us to tailor features, workflows, and dashboards to align with your specific business processes and objectives.</p>
+              </div>
+            </div>
+          </div> 
+
+
+
+          <div class="qarow" >
+            <div id="headingOne" class="">
+              <h2 class="mb-0">
+                <button type="button" data-toggle="collapse" data-target="#collapseOne4" aria-expanded="true"
+                  aria-controls="collapseOne4"
+                  class="collapsible-link">How does Kona Digital ensure data security?</button>
+              </h2>
+            </div>
+            <div id="collapseOne4" aria-labelledby="headingOne3" data-parent="#accordionExample" class="collapse">
+              <div class="">
+                <p class="">We prioritize data security and comply with industry-leading standards and regulations. Our solutions include robust security measures such as data encryption, access control, and regular security audits to ensure your information.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>  
+  </div> <img src="https://konadigital.in/images/blur3.png" alt="" class="blur3" > 
+</div>
+
+<div class="connect">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">   <h4 >Let’s connect.</h4> <p >Whether you have a groundbreaking idea or a challenging project 
+        in mind, AI Hub is here to make it a reality.</p>  <div class="btns"><a href="#" class="btn" data-toggle="modal" data-target="#get_trained"> <span> Send Message</span></a></div></div>
+      <div class="col-md-6"><img src="https://konadigital.in/images/connect.png" alt="" ></div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+<div class="row">
+  <div class="col-md-4"> <img src="https://konadigital.in/images/ftlog.png" alt="" class="ftlogo">
+    <p>At our company, we are dedicated to supporting you in the seamless creation of exceptional content that is
+      both efficient and high in quality. Our expert team and advanced AI-powered tools work hand in hand to assist
+      you in effortlessly producing top-notch content that captivates your audience.</p>
+  </div>
+  <div class="col-md-2">
+    <h4>Products</h4>
+    <ul>
+      <li><a href="products.html">LMS</a></li>
+      <li><a href="products.html">CRM</a></li>
+      <li><a href="products.html">HRMS</a></li>
+    </ul>
+  </div>
+  <div class="col-md-2">
+    <h4>Solutions</h4>
+    <ul>
+      <li><a href="solutions.html">LMS</a></li>
+      <li><a href="solutions.html">CRM</a></li>
+      <li><a href="solutions.html">HRMS</a></li>
+    </ul>
+  </div>
+  <div class="col-md-2">
+    <h4>Services  </h4>
+    <ul>
+      <li><a href="services.html">LMS</a></li>
+      <li><a href="services.html">CRM</a></li>
+      <li><a href="services.html">HRMS</a></li>
+    </ul>
+  </div>
+  <div class="col-md-2">
+    <h4>Resources</h4>
+   
+  </div>
+</div>
+  </div> <img src="https://konadigital.in/images/fticon.png.png" alt="" class="fticon">
+</footer>
+<a class="btn_caller fade-in one animated zoomIn" href="javascript:void(0)"> <img src="https://konadigital.in/images/call_o_o.png" alt="Digital Lync- Call" title="Digital Lync- Call"></a>
+
+<div class="modal_caller">
+  <div class="head_caller"> <span class="contact_txt_caller">Call Us (Or) Whatsapp Us</span> <a class="close_call_btn_caller" href="javascript:;"> <img src="images/call_c_c.png" alt="Digital Lync- Call" title="Digital Lync- Call"></a> </div>
+  <div class="content_caller"> <a class="popupNumber" href="tel:+919515175551">+91 9515175551</a></div>
+</div>
+<div id="get_trained" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Start Now</h4>
+      </div>
+      <div class="modal-body">
+        <form id="leadForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Name">
+          </div>
+
+          <label for="phone">Phone</label>
+          <div class="form-group flexdrop phoneinput">
+
+            <div class="selectdrop">
+              <select class="form-control" id="countrySelect" onchange="selectCountry(event)">
+                 
+              </select><span id="countryCode"></span>  <i class="fa fa-angle-down"></i> <span class="input-group-text" id="selectedCountryCode">+91</span>
+            </div>
+            
+            <div class="input-group">
+                
+              <input type="text" class="form-control" id="phone" placeholder="Phone">
+            </div>
+           
+          </div>              
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email">
+          </div>
+          <button onclick="saveLeadDetails(event, 5, 'VFX', 'VFX Page')" class="btn btn-primary"
+            type="button"> <span> SUBMIT</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
