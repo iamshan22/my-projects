@@ -31,6 +31,10 @@ header{
     box-shadow: 0px 0px 10px black;
 
 }
+.div{
+    position: relative;
+    bottom: 100px;
+}
 #op1,#op2,#op3{
     border: none;
     background-color:transparent;
@@ -70,7 +74,7 @@ header{
 a, div, p, h1, h2, h3, h4, h5, h6, button, img {
     transition: 0.5s all;
 }
-boby{
+body{
     background: #fcfcfc;
     color: #2c2525;
     line-height: 22px;
@@ -155,12 +159,14 @@ img{
     position: relative;
     margin-top: -186px;
  }
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
+.row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
 .pcard.left{
     margin-top: 100px;
 }
@@ -199,6 +205,7 @@ img{
     z-index: 3;
 }
 .container {
+    
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -251,6 +258,8 @@ img{
     font-weight: 400;
   }
   .fbox{
+    display: flex;
+
     box-shadow: 0 0 30px #0000000a;
     text-align: center;
     background: #ffffff7d;
@@ -260,6 +269,7 @@ img{
   .fone{
     background: transparent;
     box-shadow: 5px 5px 5px #dee2e6;
+    height: 300px;
   }
   .blur1 {
     position: absolute;
@@ -278,18 +288,21 @@ img{
     right: 0;
     bottom: 11%;
     animation: zoom-in-zoom-out1 5s ease infinite;
+    opacity: 0.3;
 }
 .trusted {
+    background-image: url(https://konadigital.in/images/mapimg.png);
     padding: 50px 0 150px;
     position: relative;
 }
 .trusted h3 {
+    color: #ddd;
     margin: 0 0 70px;
     text-align: center;
     font-weight: 600;
     font-size: 40px;
 }
-trusted h3 span {
+.trusted h3 span {
     color: #8b71bb ;
     font-weight: 700;
 }
@@ -299,6 +312,7 @@ trusted h3 span {
     border-radius: 8px;
     background: #ffffffa6;
     margin: 20px 10px 20px;
+    transition: transform 0.3s ease;
 }
 .userinfo{
     display: flex;
@@ -306,12 +320,6 @@ trusted h3 span {
     border-top: 1px solid #ddd;
     padding-top: 15px;
     text-transform: uppercase;
-}
-.userinfo img{
-    width: auto !important;
-}
-.userinfo span{
-    padding-left: 20px;
 }
 .owl-dots{
     text-align: center;
@@ -325,6 +333,52 @@ trusted h3 span {
     left: 0;
     right: 0;
 }
+
+
+/* Trusted Section */
+#trusted {
+    padding: 40px 20px;
+    background-color: #141212;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.owl-carousel .hoverable {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.cardbox:hover {
+    transform: translateY(-5px);
+}
+
+.cardbox p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.userinfo img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.userinfo span {
+    font-size: 16px;
+    color: #333;
+}
+
+.userinfo strong {
+    display: block;
+    font-size: 18px;
+    color: #000;
+}
+
+
+
+
 .locations{
     padding: 70px 0 ;
     position: relative;
@@ -352,6 +406,7 @@ trusted h3 span {
     left: 0;
     right: 0;
     top: 21%;
+    opacity: 0.2;
     animation: zoom-in-zoom-out2 5s ease infinite;
 }
 .blur4{
@@ -398,10 +453,6 @@ h2{
     align-items: center;
     text-align: center;
 }
-.footer{
-    position: relative;
-    padding: 70px 0 50px;
-}
 .connect h4 {
     background-clip: text !important;
     -webkit-background-clip: text !important;
@@ -417,6 +468,10 @@ h2{
 .ftlogo{
     max-height: 40px;
     margin: 0 0 10px;
+}
+.footer{
+    position: relative;
+    padding: 70px 0 50px;
 }
 .footer p{
     font-size: 11px;
@@ -434,128 +489,8 @@ h2{
 .footer ul li{
     padding: 0 0 10px;
 }
-.fticon{
-    position: absolute;
-    right: 0;
-    top: 50px;
-    width: 169px;
-}
-a .btn_caller {
-    display: block;
-    position: fixed;
-    right: 16px;
-    bottom: 90px;
-    z-index: 2;
-    width: 60px;
-    height: 60px;
-    box-shadow: 0 5px 4px 0 rgb(0 0 0 / 26%);
-    cursor: pointer;
-    border-radius: 34px 34px 34px 8px;
-    color: #fff;
-    padding: 7px 10px 10px;
-    background-color: #a429d7 !important;
-    color: #fff !important;
-    border-color: transparent #f58220 transparent transparent;
-    line-height: 48px;
-    text-align: center;
-}
-.btn_caller img {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-.modal_caller{
-    position: fixed;
-    width: 35px;
-    height: 130px;
-    bottom: 166px;
-    right: 17px;
-    z-index:99999999;
-    background: #fff;
-    display: none;
-    border-bottom: 1px solid #e2dfdf ;
-    box-shadow: 0 5px 40px rgb(0 0 0 / 10%);
-    transition: all .5s;
-    border-radius: 30px;
-}
-.head_caller {
-    width: 100%;
-    height: 20px;
-    padding: 1.5em 5%;
-    overflow: hidden;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    background-image: linear-gradient(-225deg, #a429d7 55%, #f58220);
-}
-.contact_txt_caller {
-    position: relative;
-    color: #fff;
-    font-size: 18px;
-    top: -13px;
-    left: 14px;
-}
-.close_call_btn_caller {
-    display: block;
-    position: fixed;
-    right: 16px;
-    bottom: 90px;
-    z-index: 999;
-    width: 60px;
-    height: 60px;
-    box-shadow: 0 5px 4px 0 rgb(0 0 0 / 26%);
-    cursor: pointer;
-    border-radius: 34px 34px 34px 8px;
-    color: #fff;
-    padding: 7px 10px 10px;
-    background-color: #a429d7 !important;
-    color: #fff !important;
-    border-color: transparent #f58220 transparent transparent;
-}
-.close_call_btn_caller img {
-    position: absolute;
-    top: 30%;
-    left: 30%;
-}
-.content_caller {
-    padding: 8% 10%;
-    padding-right: 5%;
-    font-size: 12px;
-    line-height: 20px;
-}
-.content_caller {
-    padding: 8% 10%;
-    padding-right: 5%;
-    font-size: 12px;
-    line-height: 20px;
-}
-.popupNumber {
-    color: #000;
-    font-size: 24px;
-}
-#get_trained .modal-dialog {
-    top: 60px;
-    width: 400px;
-}
-#get_trained .modal-header {
-    background: #f5f5f5;
-    color: rgba(0, 0, 0, .87);
-    border-radius: 0;
-    border: 0;
-    background-image: linear-gradient(to right, #ff9b71 0%, #5a39c2 60%, #9e2ad5 100%);
-}
-#get_trained .modal-header {
-    padding: 15px 30px;
-}#get_trained .close {
-    font-size: 36px !important;
-    position: absolute;
-    color: #fff !important;
-    right: 20px;
-    opacity: 1;
-    border: none !important;
-    box-shadow: none;
-    transition: all ease .5s;
-    font-weight: 300;
-}
+
+
 .herobg {
     background-image: url(./herobg.jpg);
     position: absolute;
@@ -564,5 +499,11 @@ a .btn_caller {
     bottom: 0;
     background-size: cover;
     background-position: bottom center;
-    height: 70%;
+    height: 10%;
+}
+.fticon{
+    position: absolute;
+    right: 15px;
+    top: 87px;
+    width: 169px;
 }
