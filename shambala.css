@@ -415,6 +415,7 @@ img{
     bottom: -100%;
 }
 .faq{
+    
     padding: 100px 0;
     position: relative;
 }
@@ -444,7 +445,18 @@ h2{
     width: 100%;
     position: relative;
     text-align: left;
+    border: none;
 }
+.collapsible-link i {
+    margin-left: 10px; /* Adjust spacing as needed */
+    font-size: 16px;
+}
+.accordion button:hover{
+    color: #a02ad6;
+    cursor: pointer;
+    
+}
+
 .connect{
     padding: 50px 0 ;
     background: linear-gradient(1deg  #e4edf5, #fff);
